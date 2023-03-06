@@ -31,10 +31,11 @@ app.post("/",function(req,res){
     ]
     };
     const jsondata=JSON.stringify(data);
+    // you need to get url from mailchimp
     const url="";
     const options={
         method:"POST",
-        auth:""
+        auth:"" // get it using mailchimp
     }
 
     const request=https.request(url,options,function(response){
