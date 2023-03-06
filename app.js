@@ -31,10 +31,10 @@ app.post("/",function(req,res){
     ]
     };
     const jsondata=JSON.stringify(data);
-    const url="https://us12.api.mailchimp.com/3.0/lists/c2aa621163";
+    const url="";
     const options={
         method:"POST",
-        auth:"SkyBoron:38ff1f5e29a18c3657d862ca19c7904e-us12"
+        auth:""
     }
 
     const request=https.request(url,options,function(response){
@@ -59,10 +59,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000,function(req,res){
     console.log("Server started at port 3000");
 });
-
-// API Key
-// 38ff1f5e29a18c3657d862ca19c7904e-us12
-
-// listID
-// c2aa621163.
-
